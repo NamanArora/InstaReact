@@ -1,21 +1,13 @@
 import React from 'react';
-import { StyleSheet, TabNavigator, Text, View, TextInput, Button, Alert, TouchableNativeFeedback,ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Alert, TouchableNativeFeedback,ScrollView, TouchableOpacity } from 'react-native';
 import Home from './Home';
 import Search from './Search';
 import Add from './Add';
 import Profile from './Profile';
 import Notif from './Notif';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
 
-export default class Feed extends React.Component{
-    render(){
-        return(
-            <View style={styles.container}>
-
-            </View>
-        );
-    }
-}
 
 export const Feed= TabNavigator({
     Home:{screen: Home},
@@ -29,7 +21,7 @@ const styles = StyleSheet.create(
     {
         container: {
             flex : 1,
-            backgroundColor: 'powderblue',
+            backgroundColor: 'green',
         },
 
     }
