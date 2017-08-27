@@ -34,7 +34,7 @@ export default class Login extends React.Component {
     container: {
         flex: 2,
         padding: 15,
-        backgroundColor: '#8e44ad'
+        backgroundColor: '#2c3e50'
     },
     logoContainer:{
         justifyContent: 'center',
@@ -61,7 +61,7 @@ export default class Login extends React.Component {
         textAlign: 'center',
         alignItems: 'center',
         color: '#FFF',
-        backgroundColor: '#9b59b6',
+        backgroundColor: '#34495e',
         paddingVertical: 10,
         fontWeight: '700'
     }
