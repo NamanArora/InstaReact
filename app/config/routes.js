@@ -21,7 +21,10 @@ import {
     Login: { screen: Login  },
     Feed: {screen: Feed},
     
-  });
+  },
+{
+  headerMode: "none",
+});
 
 
   
