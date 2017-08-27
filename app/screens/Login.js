@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, TextInput, Button, Alert, Image, TouchableNativ
 export default class Login extends React.Component {
 
     static navigationOptions = {
+        headerLeft: null,
         title: 'Welcome',
       };
 
