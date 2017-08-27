@@ -15,27 +15,27 @@ export default class Login extends React.Component {
     render() {
       return ( 
         
-          <View style={styles.container}>
+          <Image source={require('../images/loginpage.jpg')} style={styles.container}>
               <View style={styles.logoContainer}>
                 <Image source={require('../images/logo.png')} style={styles.logo} />
               </View>
               <View style={styles.form}>
-            <TextInput style={styles.input} placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)'/>
-            <TextInput style={styles.input} placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)'/>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)'/>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)'/>
             <TouchableOpacity onPress={()=> this.props.navigation.navigate('Feed')}>
                 <Text style={styles.button}>Login</Text>
             </TouchableOpacity>
           </View>
-          </View>
+          </Image>
       );
     }
   }
 
   const styles = StyleSheet.create({
     container: {
-        flex: 2,
-        padding: 15,
-        backgroundColor: '#2c3e50'
+        flex: 1,
+        resizeMode: 'cover',
+        
     },
     logoContainer:{
         justifyContent: 'center',
@@ -44,7 +44,7 @@ export default class Login extends React.Component {
     form:{
         flex:1,
         justifyContent: 'flex-end',
-        
+        padding: 15,
     },
     logo: {
         height:400,
