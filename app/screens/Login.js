@@ -20,8 +20,8 @@ export default class Login extends React.Component {
                 <Image source={require('../images/logo.png')} style={styles.logo} />
               </View>
               <View style={styles.form}>
-            <TextInput underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)'/>
-            <TextInput underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)'/>
+            <TextInput autoCorrect={false} underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)'/>
+            <TextInput autoCorrect={false} underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)'/>
             <TouchableOpacity onPress={()=> this.props.navigation.navigate('Feed')}>
                 <Text style={styles.button}>Login</Text>
             </TouchableOpacity>
