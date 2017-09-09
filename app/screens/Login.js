@@ -14,19 +14,14 @@ export default class Login extends React.Component {
     
     render() {
       return ( 
-        
-          <Image source={require('../images/loginpage.jpg')} style={styles.container}>
-              <View style={styles.logoContainer}>
-                <Image source={require('../images/logo.png')} style={styles.logo} />
-              </View>
-              <View style={styles.form}>
-            <TextInput autoCorrect={false} underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)'/>
-            <TextInput autoCorrect={false} underlineColorAndroid='rgba(0,0,0,0)' style={styles.input} placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)'/>
-            <TouchableOpacity onPress={()=> this.props.navigation.navigate('Feed')}>
-                <Text style={styles.button}>Login</Text>
-            </TouchableOpacity>
+          <View style={styles.container}>
+              <View style={styles.subContainer1}>
+                  </View>
+              <View style={styles.subContainer2}>
+                  </View>   
+              <View style={styles.subContainer3}>
+                  </View>    
           </View>
-          </Image>
       );
     }
   }
@@ -34,8 +29,17 @@ export default class Login extends React.Component {
   const styles = StyleSheet.create({
     container: {
         flex: 1,
-        resizeMode: 'cover',
+        backgroundColor: '#3498db'
         
+    },
+    subContainer1 :{
+        flex: 3,
+        backgroundColor: '#16a085'
+    },
+    subContainer2:{
+        flex: 2,
+        backgroundColor: '#e67e22'
+
     },
     logoContainer:{
         justifyContent: 'center',
@@ -61,7 +65,7 @@ export default class Login extends React.Component {
     button:{
         textAlign: 'center',
         alignItems: 'center',
-        color: '#FFF',
+        color: 'white',
         backgroundColor: '#34495e',
         paddingVertical: 10,
         fontWeight: '700'
