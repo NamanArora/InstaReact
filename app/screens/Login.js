@@ -19,9 +19,9 @@ export default class Login extends React.Component {
                   <Text style={styles.textLogo}>InstaReact</Text>
                   </View>
               <View style={styles.subContainer2}>
-                  <TextInput placeholder="Username" />
-                  <TextInput placeholder="Password" />
-                  <TouchableNativeFeedback onPress={this._loginButtonPress} background={TouchableNativeFeedback.SelectableBackground()}>
+                  <TextInput placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)' />
+                  <TextInput placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)' />
+                  <TouchableNativeFeedback onPress={() => this.props.navigation.navigate('Feed')} background={TouchableNativeFeedback.SelectableBackground()}>
                         <View style={styles.button}>
                             <Text style={{color: 'white', fontWeight: '700'}}>Hello.</Text>
                             </View>
@@ -43,6 +43,7 @@ export default class Login extends React.Component {
         fontFamily: 'painter',
         color: 'white',
         fontSize: 50,
+        fontWeight: '300',
         textAlign: 'center'
     },
     subContainer1 :{
