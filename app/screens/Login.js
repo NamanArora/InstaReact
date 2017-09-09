@@ -16,11 +16,18 @@ export default class Login extends React.Component {
       return ( 
           <View style={styles.container}>
               <View style={styles.subContainer1}>
+                  <Text style={styles.textLogo}>InstaReact</Text>
                   </View>
               <View style={styles.subContainer2}>
-                  </View>   
-              <View style={styles.subContainer3}>
-                  </View>    
+                  <TextInput placeholder="Username" />
+                  <TextInput placeholder="Password" />
+                  <TouchableNativeFeedback onPress={this._loginButtonPress} background={TouchableNativeFeedback.SelectableBackground()}>
+                        <View style={styles.button}>
+                            <Text style={{color: 'white', fontWeight: '700'}}>Hello.</Text>
+                            </View>
+                        
+                    </TouchableNativeFeedback>
+                  </View>     
           </View>
       );
     }
@@ -32,12 +39,21 @@ export default class Login extends React.Component {
         backgroundColor: '#3498db'
         
     },
+    textLogo:{
+        fontFamily: 'painter',
+        color: 'white',
+        fontSize: 50,
+        textAlign: 'center'
+    },
     subContainer1 :{
         flex: 3,
+        justifyContent: 'flex-end',
         backgroundColor: '#16a085'
     },
     subContainer2:{
         flex: 2,
+        justifyContent: 'center',
+        padding: 15,
         backgroundColor: '#e67e22'
 
     },
@@ -63,11 +79,10 @@ export default class Login extends React.Component {
         marginBottom: 10
     },
     button:{
-        textAlign: 'center',
+        marginTop: 10,
         alignItems: 'center',
-        color: 'white',
-        backgroundColor: '#34495e',
+        backgroundColor: 'rgba(255,255,255,0.1)',
         paddingVertical: 10,
-        fontWeight: '700'
+        
     }
   });
