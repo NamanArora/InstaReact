@@ -4,7 +4,14 @@ import { Text, Image, View, StyleSheet} from 'react-native';
 export default class HomeItem extends Component {
   render() {
     return (
+      
       <View style={styles.container}>
+        <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  }}
+/>
         <View style={styles.topBar}>
         <Text style={{color: 'white'}}>{this.props.username}</Text>
         </View>
@@ -14,6 +21,12 @@ export default class HomeItem extends Component {
         <View style={styles.bottomBar}>
         <Text style={{color: 'white'}}>COmments</Text>
         </View>
+        <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  }}
+/>
       </View>
     );
   }
