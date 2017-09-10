@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Alert, Image, TouchableNativeFeedback,ScrollView, TouchableOpacity } from 'react-native';
+import { NavigationActions } from 'react-navigation';
 
 export default class Login extends React.Component {
 
@@ -7,6 +8,10 @@ export default class Login extends React.Component {
         headerLeft: null,
         title: 'Welcome',
       };
+
+      resetNavigation(targetRoute) {
+        
+      }
 
     _loginButtonPress(){
         this.props.navigation.navigate('Feed');
@@ -21,7 +26,15 @@ export default class Login extends React.Component {
               <View style={styles.subContainer2}>
                   <TextInput placeholder="Username" placeholderTextColor='rgba(255,255,255,0.7)' />
                   <TextInput placeholder="Password" placeholderTextColor='rgba(255,255,255,0.7)' />
-                  <TouchableNativeFeedback onPress={() => this.props.navigation.navigate('Feed')} background={TouchableNativeFeedback.SelectableBackground()}>
+                  <TouchableNativeFeedback onPress={() => {
+                    const resetAction = NavigationActions.reset({
+                    index: 0,
+                    actions: [
+                    NavigationActions.navigate({ routeName: 'Feed' }),
+                    ],
+                    });
+                    this.props.navigation.dispatch(resetAction);
+                      }} background={TouchableNativeFeedback.SelectableBackground()}>
                         <View style={styles.button}>
                             <Text style={{color: 'white', fontWeight: '700'}}>Hello.</Text>
                             </View>
