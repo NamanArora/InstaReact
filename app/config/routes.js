@@ -20,9 +20,14 @@ import {
   const insta = StackNavigator({
     Login: { screen: Login,
     navigationOptions: ({navigation}) => ({
-      header: null
+      header: null,
+      headerBackTitle: null
     })  },
-    Feed: {screen: Feed},
+    Feed: {screen: Feed,
+      navigationOptions: ({navigation}) => ({
+        headerBackTitle: null,
+        headerLeft: null
+      })},
     
   },
 {
