@@ -21,11 +21,24 @@ import {
     Login: { screen: Login,
     navigationOptions: ({navigation}) => ({
       header: null,
+      
       headerBackTitle: null
     })  },
     Feed: {screen: Feed,
       navigationOptions: ({navigation}) => ({
         headerBackTitle: null,
+        headerTitle: 'InstaReact',
+        headerStyle: {
+          backgroundColor: '#16a085'
+        },
+        headerTitleStyle:{
+          color: 'white',
+          fontFamily: 'painter',
+          textAlign: 'center',
+          alignSelf: 'center',
+          fontWeight: "400",
+          fontSize: 30,
+        },
         headerLeft: null
       })},
     
