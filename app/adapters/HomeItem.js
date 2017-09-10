@@ -6,23 +6,17 @@ export default class HomeItem extends Component {
     return (
       
       <View style={styles.container}>
-        <View
-  style={{
-    borderBottomColor: 'black',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  }}
-/>
         <View style={styles.topBar}>
-        <Text style={{color: 'white'}}>{this.props.username}</Text>
+        <Image  style={styles.icon} source={require('../images/fb.png')} />
+        <Text style={{color: 'black', marginLeft: 5}}>{this.props.username}</Text>
         </View>
-        <View style={styles.photo}>
-        <Image source={require('../images/logo.png')}/>
-        </View>
+        <Image  style={styles.photo} source={require('../images/flower.jpg')} />
         <View style={styles.bottomBar}>
-        <Text style={{color: 'white'}}>COmments</Text>
+        <Text style={{color: 'black'}}>Show all comments</Text>
         </View>
         <View
   style={{
+    paddingTop: 5,
     borderBottomColor: 'black',
     borderBottomWidth: StyleSheet.hairlineWidth,
   }}
@@ -34,7 +28,11 @@ export default class HomeItem extends Component {
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1,
+    height: 550,
+    width: 412,
+    paddingLeft: 5,
+    paddingTop: 5,
+    paddingRight: 5,
     flexDirection: 'column',
     justifyContent: 'flex-start',
     
@@ -42,16 +40,25 @@ const styles = StyleSheet.create({
   topBar:{
     flex:1,
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    paddingVertical: 5,
+    backgroundColor: 'white',
+    
+  },
+  icon: {
+    height: 25,
+    width: 25,
+    borderWidth: 1,
+    borderRadius: 75,
+    resizeMode: 'cover'
   },
   bottomBar:{
-    flex: 2,
-    flexDirection: 'row',
+    flex: 1,
     
   },
   photo:{
-    flex:10,
-    justifyContent: 'center',
-    alignItems: 'center'
+    height:460,
+    width:402,
+    resizeMode: 'cover' 
+    
   },
 });
