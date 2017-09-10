@@ -8,7 +8,7 @@ export default class HomeItem extends Component {
       <View style={styles.container}>
         <View style={styles.topBar}>
         <Image  style={styles.icon} source={require('../images/fb.png')} />
-        <Text style={{color: 'black', marginLeft: 5}}>{this.props.username}</Text>
+        <Text style={{color: 'black', marginLeft: 5, fontSize: 20}}>{this.props.username}</Text>
         </View>
         <Image  style={styles.photo} source={require('../images/flower.jpg')} />
         <View style={styles.bottomBar}>
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     
   },
   icon: {
-    height: 25,
-    width: 25,
+    height: 27,
+    width: 27,
     borderWidth: 1,
     borderRadius: 75,
     resizeMode: 'cover'
