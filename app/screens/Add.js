@@ -1,6 +1,6 @@
-import React, { Component,Dimensions }  from 'react';
+import React, { Component }  from 'react';
 
-import { Text, View,StyleSheet } from 'react-native';
+import { Text, View,StyleSheet,Dimensions } from 'react-native';
 import Camera from 'react-native-camera';
 
 export default class Add extends Component {
@@ -33,5 +33,20 @@ const styles = StyleSheet.create(
       flex: 1,
       backgroundColor: "#34495e"
     },
+    preview:{
+      flex: 1,
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width
+    },
+    capture: {
+      flex: 0,
+      backgroundColor: '#fff',
+      borderRadius: 5,
+      color: '#000',
+      padding: 10,
+      margin: 40
+    }
   }
 );
