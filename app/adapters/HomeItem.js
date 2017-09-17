@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, Image, View, StyleSheet} from 'react-native';
+import LikeAndPostBar from './../misc/LikeAndPostBar';
 
 export default class HomeItem extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class HomeItem extends Component {
         </View>
         <Image  style={styles.photo} source={require('../images/flower.jpg')} />
         <View style={styles.bottomBar}>
+          <LikeAndPostBar />
         <Text style={{color: 'black'}}>Show all comments</Text>
         </View>
         <View
