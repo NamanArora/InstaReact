@@ -18,11 +18,12 @@ export const Feed= TabNavigator({
     tabBarPosition: 'bottom',
     tabBarOptions: {
             labelStyle: {
+              color: 'black',
               fontSize: 12,
               fontWeight: 'bold'
             },
         style: {
-            backgroundColor: '#e67e22',
+            backgroundColor: 'white',
         }
     }
 });

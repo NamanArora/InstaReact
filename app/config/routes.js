@@ -29,10 +29,10 @@ import {
         headerBackTitle: null,
         headerTitle: 'InstaReact',
         headerStyle: {
-          backgroundColor: '#16a085'
+          backgroundColor: 'white'
         },
         headerTitleStyle:{
-          color: 'white',
+          color: 'black',
           fontFamily: 'painter',
           textAlign: 'center',
           alignSelf: 'center',
