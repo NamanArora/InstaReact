@@ -14,7 +14,7 @@ export default class HomeItem extends Component {
         <Image  style={styles.photo} source={require('../images/flower.jpg')} />
         <View style={styles.bottomBar}>
           <LikeAndPostBar />
-          <Text style={{paddingVertical: 5,}}>View all comments.. </Text>
+          <Text style={{paddingTop: 5}}>View all comments.. </Text>
         </View>
         <View
   style={{
@@ -55,11 +55,12 @@ const styles = StyleSheet.create({
   },
   bottomBar:{
     flex: 1,
+    height: 35,
     flexDirection: 'column',
 
   },
   photo:{
-    height:460,
+    height:400,
     width:402,
     resizeMode: 'cover' 
     

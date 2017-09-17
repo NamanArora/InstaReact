@@ -34,13 +34,11 @@ const styles = StyleSheet.create(
         container:{
             flexDirection: 'row',
             flex: 1,
-            marginBottom: 20,
-
+            height: 29,
         },
         button:{
             paddingVertical: 5,
             alignItems: 'center',
-            paddingHorizontal: 10,
             backgroundColor: 'white',
         },
         view1:{
