@@ -14,7 +14,7 @@ export default class HomeItem extends Component {
         <Image  style={styles.photo} source={require('../images/flower.jpg')} />
         <View style={styles.bottomBar}>
           <LikeAndPostBar />
-          <Text style={{paddingTop: 5}}>View all comments.. </Text>
+          <Text style={{paddingTop: 0, paddingLeft: 5, marginTop: 0}}>View all comments.. </Text>
         </View>
         <View
   style={{
