@@ -37,7 +37,7 @@ const styles = StyleSheet.create(
             height: 29,
         },
         button:{
-            paddingVertical: 5,
+            paddingVertical: 7,
             alignItems: 'center',
             backgroundColor: 'white',
         },
