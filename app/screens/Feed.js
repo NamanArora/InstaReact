@@ -13,14 +13,14 @@ export const Feed= TabNavigator({
         screen: Home,
         navigationOptions: {
           tabBarIcon: ({ tintColor }) => {
-            return <Icon name="home" size={28} color={tintColor} />;}
+            return <Icon name="home" size={25} color={tintColor} />;}
         },
     },
     Search:{
         screen: Search,
         navigationOptions:({navigation}) => ({
             tabBarIcon: ({ tintColor }) => {
-                return <Icon name='search' size={30} color={ tintColor } />;
+                return <Icon name='search' size={25} color={ tintColor } />;
             }        
         }),
     },
@@ -28,7 +28,7 @@ export const Feed= TabNavigator({
         screen:Add,
         navigationOptions:({navigation}) => ({
             tabBarIcon: ({ tintColor }) => {
-                return <Icon name='camera' size={26} color={ tintColor } />;
+                return <Icon name='camera' size={23} color={ tintColor } />;
             }        
         }),
     },
@@ -36,7 +36,7 @@ export const Feed= TabNavigator({
         screen:Profile,
         navigationOptions:({navigation}) => ({
             tabBarIcon: ({ tintColor }) => {
-                return <Icon name='user-circle-o' size={30} color={ tintColor } />;
+                return <Icon name='user-circle-o' size={25} color={ tintColor } />;
             }        
         }),
     },
@@ -44,7 +44,7 @@ export const Feed= TabNavigator({
         screen:Notif,
         navigationOptions:({navigation}) => ({
             tabBarIcon: ({ tintColor }) => {
-                return <Icon name='bell' size={30} color={ tintColor } />;
+                return <Icon name='bell' size={25} color={ tintColor } />;
             }        
         }),
     }
@@ -56,8 +56,8 @@ export const Feed= TabNavigator({
       showIcon: true,
       showLabel: false,
       iconStyle: {
-        width: 30,
-        height: 30,
+        width: 25,
+        height: 25,
       },
     }
 });
